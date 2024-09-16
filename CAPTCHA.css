@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.captcha-container {
+    text-align: center;
+}
+
+.captcha-box {
+    width: 100px;
+    height: 100px;
+    background-color: #9e9e9e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.captcha-box:hover {
+    background-color: #757575;
+}
+
+.captcha-box.clicked {
+    background-color: #4CAF50;
+    pointer-events: none;
+}
